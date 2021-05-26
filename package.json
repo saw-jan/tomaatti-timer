@@ -23,11 +23,15 @@
   "devDependencies": {
     "@babel/preset-env": "^7.5.5",
     "@types/jest": "^24.0.15",
+    "chromedriver": "^90.0.1",
     "codecov": "^3.5.0",
     "coveralls": "^3.0.5",
     "docdash": "^1.1.1",
+    "geckodriver": "^2.0.0",
     "jest": "^24.8.0",
     "jsdoc": "^3.6.3",
+    "nightwatch": "^1.6.4",
+    "selenium-server": "^3.141.59",
     "serve": "^11.2.0",
     "stylus": "^0.54.5"
   },
