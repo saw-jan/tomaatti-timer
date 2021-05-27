@@ -8,7 +8,10 @@
     "start": "serve -p 5000",
     "styles": "stylus src/css/style.styl --out src/css/style.min.css --compress",
     "test": "jest",
-    "serve": "npm run styles && npm start"
+    "serve": "npm run styles && npm start",
+    "tdd:test": "nightwatch -e chrome",
+    "tdd:test:selenium": "nightwatch -c selenium.conf.js -e chrome",
+    "bdd:cucumber": "cucumber-js --require cucumber.conf.js --require test/acceptance/stepDefinitions --format @cucumber/pretty-formatter"
   },
   "author": "Anton Zolotukhin <zolotuhin87@gmail.com> (https://mister-gold.pro)",
   "license": "MIT",
@@ -22,6 +25,8 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.5.5",
+    "@cucumber/cucumber": "^7.2.1",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.0",
     "@types/jest": "^24.0.15",
     "chromedriver": "^90.0.1",
     "codecov": "^3.5.0",
@@ -31,6 +36,7 @@
     "jest": "^24.8.0",
     "jsdoc": "^3.6.3",
     "nightwatch": "^1.6.4",
+    "nightwatch-api": "^3.0.2",
     "selenium-server": "^3.141.59",
     "serve": "^11.2.0",
     "stylus": "^0.54.5"

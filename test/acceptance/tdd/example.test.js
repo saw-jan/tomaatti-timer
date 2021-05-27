@@ -1,7 +1,9 @@
 describe('Tomaatti Timer: Acceptance Tests', function () {
   it('set timer name', function (browser) {
+    // before
+    browser.url(browser.launchUrl);
     // action
-    browser.url(browser.launchUrl).setValue('#timer-label', 'testing');
+    browser.setValue('#timer-label', 'testing');
     // assertion
     browser.expect.element('#timer-label').to.have.value.that.equals('testing');
   });

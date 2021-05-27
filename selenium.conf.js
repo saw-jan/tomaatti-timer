@@ -12,7 +12,7 @@ module.exports = {
         server_path: require('selenium-server').path,
       },
     },
-    'selenium.chrome': {
+    chrome: {
       extends: 'selenium',
       selenium: {
         cli_args: {
@@ -23,7 +23,7 @@ module.exports = {
         browserName: 'chrome',
       },
     },
-    'selenium.firefox': {
+    firefox: {
       extends: 'selenium',
       selenium: {
         cli_args: {
