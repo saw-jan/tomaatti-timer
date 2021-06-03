@@ -12,12 +12,12 @@ const {
 
 setDefaultTimeout(60000);
 
-BeforeAll(async () => {
+BeforeAll(async function () {
   await startWebDriver({ env: 'chrome' });
   await createSession();
 });
 
-AfterAll(async () => {
+AfterAll(async function () {
   await closeSession();
   await stopWebDriver();
 });

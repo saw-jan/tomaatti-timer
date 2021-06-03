@@ -10,11 +10,17 @@ module.exports = {
         start_process: true,
         port: 4444,
         server_path: require('selenium-server').path,
+        // to run with selenium start manually
+        // start_process: false,
+        // port: 4444,
+        // host: 'localhost',
       },
     },
     chrome: {
       extends: 'selenium',
       selenium: {
+        // if running selenium manually, this has no effect
+        // chromedriver path must be provided at the time of starting selenium server
         cli_args: {
           'webdriver.chrome.driver': require('chromedriver').path,
         },
